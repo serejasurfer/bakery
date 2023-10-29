@@ -126,6 +126,8 @@ nav.open ~ .overlay{
 }
 .container img{
     max-width:100%;
+    width: 350px;
+    height: 270px;
     object-fit: cover;
     border-radius: 25px;
 }
@@ -190,7 +192,6 @@ nav.open ~ .overlay{
         padding: 15px;
         margin: 30px;
         width: 350px;
-        /* min-width: 30%; */
         background-color: #fff;
         border-radius: 25px;
     }
