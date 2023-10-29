@@ -12,10 +12,11 @@ body{
 }
 nav{
     position: fixed;
-    top: 0;
+    top: -100px;
     left: 0;
-    height: 70px;
+    height: 170px;
     width: 100%;
+    padding-top: 100px;
     display: flex;
     align-items: center;
     background: white;
@@ -168,7 +169,7 @@ nav.open ~ .overlay{
 }
 
 /* Desktop menu */
-@media all and (min-width:855px){
+@media all and (min-width:860px){
     .container{
        display: flex;
        flex-wrap: wrap;
