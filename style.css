@@ -103,3 +103,29 @@ nav.open ~ .overlay{
     left: 260px;
     pointer-events: auto;
 }
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 70px;
+    width: 100%;
+    height: 1000px;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container .card{
+    padding: 15px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 25px;
+    margin: 10px;
+
+}
+.container img{
+    max-width:100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
