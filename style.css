@@ -8,19 +8,18 @@
 }
 body{
     min-height: 100%;
-    background: #e3f2fd;
+    background: white;
 }
 nav{
     position: fixed;
-    top: -100px;
+    top: 0px;
     left: 0;
-    height: 170px;
+    height: 70px;
     width: 100%;
-    padding-top: 100px;
     display: flex;
     align-items: center;
     background: white;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 nav .logo{
     display: flex;
@@ -120,7 +119,7 @@ nav.open ~ .overlay{
 .container .card{
     padding: 15px;
     width: 300px;
-    background-color: #fff;
+    background-color: #e0630f23;
     border-radius: 25px;
     margin: 10px;
 }
