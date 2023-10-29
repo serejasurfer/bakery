@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
-
+/* Mobile */
 *{
     margin: 0;
     padding: 0;
@@ -106,26 +106,83 @@ nav.open ~ .overlay{
 
 .container{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     position: relative;
-    margin-top: 70px;
+    padding: 70px 50px;
     width: 100%;
-    height: 1000px;
-    background-color: rgba(0, 0, 0, 0.3);
-    justify-content: space-around;
-    align-items: flex-start;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .container .card{
     padding: 15px;
-    width: 350px;
+    width: 300px;
     background-color: #fff;
     border-radius: 25px;
     margin: 10px;
-
 }
 .container img{
     max-width:100%;
     object-fit: cover;
     border-radius: 25px;
+}
+.card .content{
+    padding-top: 5px;
+    font-size:16px;
+}
+
+/* Tablet menu */
+@media all and (min-width:550px){
+    .container{
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: row;
+       position: relative;
+       align-items: center;
+       justify-content: space-around;
+       padding: 70px 10px;
+    }
+    .container .card{
+        padding: 15px;
+        width: 200px;
+        /* min-width: 30%; */
+        background-color: #fff;
+        border-radius: 25px;
+        margin: 12px;
+    }
+    .card .content{
+        padding-top: 5px;
+        font-size:10px;
+    }
+    
+
+}
+
+/* Desktop menu */
+@media all and (min-width:855px){
+    .container{
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: row;
+       position: relative;
+       align-items: center;
+       justify-content: center;
+       padding: 70px 10px;
+    }
+    .container .card{
+        padding: 15px;
+        margin: 30px;
+        width: 350px;
+        /* min-width: 30%; */
+        background-color: #fff;
+        border-radius: 25px;
+    }
+    .card .content{
+        padding-top: 5px;
+        font-size:16px;
+    }
+    
+
 }
