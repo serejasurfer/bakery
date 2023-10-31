@@ -1,10 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
-/* Mobile */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&family=Rubik:wght@300;400;500&display=swap');/* Mobile */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+a{
+    text-decoration: none;
+    color:#333;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto Slab', serif;
 }
 body{
     min-height: 100%;
@@ -29,6 +35,7 @@ nav .logo{
 .logo .menu-icon{
     color: #333;
     font-size: 24px;
+    margin-top: 2px;
     margin-right: 14px;
     cursor: pointer;
 }
@@ -36,6 +43,7 @@ nav .logo{
     color: #333;
     font-size: 22px;
     font-weight: 500;
+    font-family: 'Roboto Slab', serif;
 }
 nav .sidebar{
     position: fixed;
@@ -103,101 +111,149 @@ nav.open ~ .overlay{
     left: 260px;
     pointer-events: auto;
 }
-
+.contacts{
+    display: none;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+}
+.contacts .contacts-info{
+    padding-right: 16px;
+}
+.welcome{
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    margin-top: 150px;
+    margin-bottom: 90px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
 .container{
     display: flex;
     flex-direction: column;
     position: relative;
-    padding: 70px 50px;
+    padding: 0px 10px;
+    margin: 70px 0px;
     width: 100%;
     height: 100%;
     /* background-color: rgba(0, 0, 0, 0.3); */
     justify-content: flex-start;
     align-items: center;
 }
-
 .container .card{
-    padding: 15px;
+    padding: 10px;
     width: 300px;
     background-color: #e08c0f23;
-    border-radius: 25px;
+    border-radius: 15px;
     margin: 10px;
 }
 .container img{
     max-width:100%;
-    width: 350px;
-    height: 270px;
+    min-width:100%;
+    height: 240px;
     object-fit: cover;
-    border-radius: 25px;
+    border-radius: 12px;
 }
 .card .content{
-    padding-top: 5px;
+    padding-top: 2px;
     font-size:16px;
 }
 
-/* Tablet menu */
-@media all and (min-width:550px){
+/* Small tablet menu */
+@media all and (min-width:425px){
+    .welcome{
+        margin-top: 100px;
+        margin-bottom: 0px;
+    }
     .container{
-       display: flex;
        flex-wrap: wrap;
        flex-direction: row;
-       position: relative;
-       align-items: center;
-       justify-content: space-around;
-       padding: 70px 10px;
+       justify-content: center;
+       align-items: flex-start;
+       padding: 0px 5px;
     }
     .container img{
-        max-width:100%;
         width: 180px;
-        height: 180px;
-        object-fit: cover;
-        border-radius: 25px;
+        height: 160px;
     }
     .container .card{
-        padding: 15px;
+        width: 185px;
+        margin: 6px;
+    }
+    .card .content{
+        font-size:10px;
+    }
+    .contacts{
+        display: flex;
+    }
+}
+
+/* Tablet */
+@media all and (min-width:485px){
+    .welcome{
+        margin-top: 100px;
+        margin-bottom: 0px;
+    }
+    .container{
+       flex-wrap: wrap;
+       flex-direction: row;
+       justify-content: space-around;
+       align-items: flex-start;
+       padding: 0px 10px;
+       margin-top: 40px;
+    }
+    .container img{
+        width: 180px;
+        height: 180px;
+    }
+    .container .card{
         width: 200px;
-        /* min-width: 30%; */
-        background-color: #e08c0f23;
-        border-radius: 25px;
         margin: 12px;
     }
     .card .content{
-        padding-top: 5px;
         font-size:10px;
     }
-    
-
+    .contacts{
+        display: flex;
+    }
 }
 
 /* Desktop menu */
 @media all and (min-width:860px){
+    .welcome{
+        margin-top: 100px;
+        margin-bottom: 0px;
+        padding: 0px 90px;
+        font-size: 18px;
+    }
     .container{
-       display: flex;
        flex-wrap: wrap;
        flex-direction: row;
-       position: relative;
-       align-items: center;
        justify-content: center;
-       padding: 70px 10px;
+       align-items: flex-start;
     }
     .container img{
-        max-width:100%;
         width: 350px;
         height: 350px;
-        object-fit: cover;
-        border-radius: 25px;
     }
     .container .card{
-        padding: 15px;
-        margin: 30px;
+        margin: 20px;
         width: 350px;
-        background-color: #e08c0f23;
-        border-radius: 25px;
     }
     .card .content{
-        padding-top: 5px;
         font-size:16px;
     }
-    
-
+    .contacts{
+        display: flex;
+    }
+}
+@media all and (max-width:571px){
+    .contacts{
+    display: none;
+    }
 }
