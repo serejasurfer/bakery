@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./script.js"></script>
     <title>Кулинария г. Челябинск</title>
+
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <!-- Приветственный текст -->
@@ -179,20 +181,8 @@
    
     <section class="overlay"></section>
 
-    <script>
-        const navBar = document.querySelector("nav"),
-              menuBtns = document.querySelectorAll(".menu-icon"),
-              overlay = document.querySelector(".overlay");
+    <script src="./script.js">
         
-              menuBtns.forEach(menuBtn => {
-                menuBtn.addEventListener("click", () => {
-                    navBar.classList.toggle("open")
-                })
-              })
-
-              overlay.addEventListener("click", () => {
-                navBar.classList.remove("open")
-              })
     </script>
 
 
