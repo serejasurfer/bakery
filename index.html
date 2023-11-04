@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
     <title>Кулинария г. Челябинск</title>
 </head>
 <body>
@@ -20,7 +21,10 @@
     <!-- Container -->
         <div class="container">
             <!-- Первая карточка -->
-            <div class="card">
+            <div class="card" onclick="popup()">
+                    <div class="popup">
+                    <span class="popuptext" id="myPopup">Popup text...</span>
+                    </div>
                 <div class="imgBx">
                     <img src="./assets/торт1.jpg" alt="Торт">
                 </div>
