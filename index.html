@@ -6,10 +6,62 @@
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./script.js"></script>
     <title>Кулинария г. Челябинск</title>
 </head>
 <body>
+    <nav>
+        <div class="logo">
+            <i class="bx bx-menu menu-icon"></i>
+            <span class="logo-name">Кулинария</span>
+        </div>
+
+        <div class="contacts">
+            <div class="contacts info">
+            Для заказа: <a href="tel:+79814164587">+7 (981)-416-45-87</a>
+            </div>
+            <div class="contacts-info">
+                Светлана
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="logo">
+                <i class="bx bx-menu menu-icon"></i>
+                <span class="logo-name">Кулинария</span>
+            </div>
+            <div class="sidebar-content">
+                <ul class="lists">
+                    <li class="list">
+                        <div class="nav-link">
+                            <span class="link">
+                                <i class='bx bx-phone icon'></i>
+                                    <a href="tel:+79814164587">+7 (981)-416-45-87</a>
+                            </span>
+                        </div>
+                </li>
+                    <li class="list">
+                        <a href="#" class="nav-link">
+                            <i class='bx bx-home icon'></i>
+                            <span class="link">Все продукты</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#" class="nav-link">
+                            <i class='bx bxs-circle icon2'></i>
+                            <span class="link">Сладкое</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#" class="nav-link">
+                            <i class='bx bxs-circle icon2'></i>
+                            <span class="link">Мучное</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="overlay"></section>
 <!-- Приветственный текст -->
     <header class="welcome">
         <h2>Добро пожаловать в мир вкусных домашних блюд!</h2>
@@ -124,78 +176,6 @@
             </div>
 
         </div>
-    <nav>
-        <div class="logo">
-            <i class="bx bx-menu menu-icon"></i>
-            <span class="logo-name">Кулинария</span>
-        </div>
-
-        <div class="contacts">
-            <div class="contacts info">
-            Для заказа: <a href="tel:+79814164587">+7 (981)-416-45-87</a>
-            </div>
-            <div class="contacts-info">
-                Светлана
-            </div>
-        </div>
-
-        <div class="sidebar">
-            <div class="logo">
-                <i class="bx bx-menu menu-icon"></i>
-                <span class="logo-name">Кулинария</span>
-            </div>
-            <div class="sidebar-content">
-                <ul class="lists">
-                    <li class="list">
-                        <div class="nav-link">
-                            <span class="link">
-                                <i class='bx bx-phone icon'></i>
-                                    <a href="tel:+79814164587">+7 (981)-416-45-87</a>
-                            </span>
-                        </div>
-                </li>
-                    <li class="list">
-                        <a href="#" class="nav-link">
-                            <i class='bx bx-home icon'></i>
-                            <span class="link">Все продукты</span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="#" class="nav-link">
-                            <i class='bx bxs-circle icon2'></i>
-                            <span class="link">Сладкое</span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="#" class="nav-link">
-                            <i class='bx bxs-circle icon2'></i>
-                            <span class="link">Мучное</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-   
-    <section class="overlay"></section>
-
-    <script>
-        const navBar = document.querySelector("nav"),
-              menuBtns = document.querySelectorAll(".menu-icon"),
-              overlay = document.querySelector(".overlay");
-        
-              menuBtns.forEach(menuBtn => {
-                menuBtn.addEventListener("click", () => {
-                    navBar.classList.toggle("open")
-                })
-              })
-
-              overlay.addEventListener("click", () => {
-                navBar.classList.remove("open")
-              })
-    </script>
-
-
-
+<script src="./script.js"></script>
 </body>
 </html>
